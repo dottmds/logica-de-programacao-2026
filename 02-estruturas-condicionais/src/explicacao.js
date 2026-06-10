@@ -97,22 +97,37 @@
 //}
 
 // exemp 2
-var idioma = "pt"
+//var idioma = "pt"
 
-switch(idioma) {
-    case 'en':
-        console.log("hi")
-        break;
-    case 'fr':
-        console.log("bonjur")
-        break;
-    case 'pt':
-        console.log("ola")
-        break;
-    case 'es':
-        console.log("Hola")
-        break;
-    default:
-        console.log("Hello")
+//switch(idioma) {
+ //   case 'en':
+//        console.log("hi")
+ //       break;
+//    case 'fr':
+ //       console.log("bonjur")
+ //       break;
+ //   case 'pt':
+ //       console.log("ola")
+ //       break;
+ //   case 'es':
+ //       console.log("Hola")
+ //       break;
+ //   default:
+  //      console.log("Hello")
+//
+//}
 
-}
+
+
+
+
+// OPERADOR TERNARIO
+// (condicao) ? "algo aconteceu" : "outra coisa acontece"
+
+//ex
+//var idade = 22
+
+//var ehMaior = idade >= 18 ? "eh maior de idade" : "nn eh maior de idade"
+
+//console.log(ehMaior)
+
