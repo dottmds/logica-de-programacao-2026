@@ -1,7 +1,7 @@
 import leia from 'readline-sync'
 
 var salario = leia.questionFloat("Digite seu salario: ")
-var valorEmpr = leia.question("Digite o valor de emprestimo que vc quer: ")
+var valorEmpr = leia.questionInt("Digite o valor de emprestimo que vc quer: ")
 var numPrest = leia.question("Digite o numero de prestacoes: ")
 
 var valorPrestcao = valorEmpr / numPrest 

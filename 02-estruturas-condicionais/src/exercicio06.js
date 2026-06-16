@@ -7,7 +7,7 @@ var oneReal = leia.questionFloat("quantia de moedas de 1 real: ") * 1.00
 var cinqCent = leia.questionFloat("quantia de moedas de 50 centavos: ") * 0.50
 var vintCincCent = leia.questionFloat("quantia de moedas de 25 centavos: ") * 0.25
 var dezCent = leia.questionFloat("quantia de moedas de 10 centvos: ") * 0.10
-var CincCent = leia.questionFloat("quantia de moedas de 5 centavos: ") * 0.05
+var CincCent = leia.question("quantia de moedas de 50 centavos: ")
 
 var total = oneReal + cinqCent + vintCincCent + dezCent + CincCent 
 
