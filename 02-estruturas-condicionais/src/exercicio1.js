@@ -11,6 +11,6 @@ var total = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
 
 if(total >= 7 && fre > 75) {
     console.log("O ALUNO ESTA APROVADO!!!");
-} else if(total < 7 && fre < 75) {
+} else if(total < 7 || fre < 75 || fre < 0) {
     console.log("O ALUNO ESTA REPROVADO!!!")
 } 
