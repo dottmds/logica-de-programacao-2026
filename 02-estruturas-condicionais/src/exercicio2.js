@@ -2,7 +2,7 @@ import leia from 'readline-sync'
 
 var valorCompra = leia.questionFloat("DIGITE O VALOR TOTAL DA COMPRA: ")
 
-var cliente = leia.keyInSelect(["Nao", "Sim"], "VOCE E CLIENTE VIP?")
+var cliente = leia.keyInSelect(["SIM", "NAO"], "VOCE E CLIENTE VIP?")
 
 if (cliente === 0) {
     console.log("O VALOR DA COMPRA SERA DE R$" + valorCompra)

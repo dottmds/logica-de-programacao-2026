@@ -9,6 +9,16 @@ import leia from 'readline-sync'
 var horasEstacionadas = leia.questionInt("HORAS ESTACIONADO: ");
 var cartaoFidelidade = leia.keyInSelect(["Sim" , "Nao"] , "VOCE POSSUI CARTAO FIDELIDADE???")
 
-if(cartaoFidelidade === 1) {
-    
+var valor = 0
+if(horas=== 1) {
+    valor = 8.0
+} else if(horas > 1 && horas <= 3) {
+    valor = 15.0
+} else if(horas > 3 && horas <= 6) {
+    valor = 22.0
+} else{
+    valor = 30.0
 }
+
+var valorComDesconto = (cartaoFidelidade === 0) ? valor - (valor * 0.15) : valor
+console.log("O VALOR DO ESTACIONAMENTO EH : R$" + valorComDesconto)
