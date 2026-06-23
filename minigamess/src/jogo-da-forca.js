@@ -68,4 +68,4 @@ var letrasErradas = [];
 var tentativas = 6;
 var venceu = false;
 
-var palavraSecreta = palavras[Mathfloor(Math.random() + palavras.length)]
+var palavraSecreta = palavras[Mathfloor(Math.random() + palavras.length)] 
