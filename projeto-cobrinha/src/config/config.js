@@ -13,6 +13,7 @@ export const SIMBOLOS = {
     inimigo: "👻",
     portal1: "🌀",
     portal2: "🔵",
+    comida: "🍎"
 };
 
 export const TIPOS_COMIDA = [
