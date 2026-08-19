@@ -1,5 +1,6 @@
 import leia from 'readline-sync';
 import { cadastrar } from './cadastrar.js';
+import { listar } from './listar.js';
 
 var estoque = [];
 
@@ -20,7 +21,7 @@ do {
             break;
         
         case 2:
-
+        listar(estoque);
             break;
 
         case 3:
