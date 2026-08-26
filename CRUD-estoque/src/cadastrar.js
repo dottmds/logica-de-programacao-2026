@@ -6,10 +6,11 @@ export function cadastrar(estoque) {
     var quantidadeDoProduto = leia.questionInt("Informe a quantidade do produto: ");
 
     var produto = {
+        id: estoque.length + 1,
         nome: nomeDoProduto,
         preco: precoDoProduto,
         quantidade: quantidadeDoProduto
-    }
+    };
 
     estoque.push(produto);
 }

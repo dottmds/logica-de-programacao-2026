@@ -1,12 +1,19 @@
-import leia from 'readline-sync';
+import { estoque } from "./estoq.js";
 
-export function listar(estoque) {
+export function listarProdutos() {
+    console.log("\n------------------- ESTOQUE ATUAL -------------------");
+    console.log("ID" + " | " + "NOME" + " | " + "QTD" + " | " + "PREÇO (R$)");
+    console.log("-----------------------------------------------------");
 
-    estoque.forEach((produto) => {
+    if (estoque.length === 0) {
+        console.log("Nenhum produto cadastrado no momento.");
+        return;
+    }
 
-        console.log(produto.nome);
-        console.log(produto.preco);
-        console.log(produto.quantidade);
-    });
-
+    for (var i = 0; i < estoque.length; i++) {
+        var produto = estoque[i];
+        console.log(produto.id + " | " + produto.nome + " | " + produto.quantidade + " | R$ " + produto.preco);
+    }
+    
+    console.log("-----------------------------------------------------");
 }

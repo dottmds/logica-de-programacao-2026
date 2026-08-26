@@ -1,10 +1,9 @@
 import leia from 'readline-sync';
 import { cadastrar } from './cadastrar.js';
-import { listar } from './listar.js';
-import { atualizar } from './atualizar.js';
-import { excluir } from './excluir.js';
-
-var estoque = [];
+import { listarProdutos } from './listar.js';
+import { atualizarProduto } from './atualizar.js';
+import { deletarProduto } from './excluir.js';
+import { estoque } from './estoq.js';
 
 do {
 
@@ -22,13 +21,13 @@ do {
             cadastrar(estoque);
             break;
         case 2:
-            listar(estoque);
+            listarProdutos(estoque);
             break;
         case 3:
-            atualizar(estoque);
+            atualizarProduto(estoque);
             break;
         case 4:
-            excluir(estoque);
+            deletarProduto(estoque);
             break;
         case 5:
             console.log("Programa encerrado.")
