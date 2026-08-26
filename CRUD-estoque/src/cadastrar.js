@@ -1,4 +1,5 @@
 import leia from 'readline-sync';
+import { estoque } from './estoq.js';
 
 export function cadastrar(estoque) {
     var nomeDoProduto = leia.question("Informe o nome do produto: ");
